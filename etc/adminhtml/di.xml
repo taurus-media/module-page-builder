@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) 2024. Taurus. All rights reserved
+ * @author Alexander Tolochko
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\PageBuilder\Model\Wysiwyg\DefaultConfigProvider">
+        <arguments>
+            <argument name="additionalSettings" xsi:type="array">
+                <item name="style_formats_merge" xsi:type="boolean">true</item>
+                <item name="rel_list" xsi:type="array">
+                    <item name="0" xsi:type="array">
+                        <item name="text" xsi:type="string">-- empty --</item>
+                        <item name="value" xsi:type="string"></item>
+                    </item>
+                    <item name="1" xsi:type="array">
+                        <item name="text" xsi:type="string">alternate</item>
+                        <item name="value" xsi:type="string">alternate</item>
+                    </item>
+                    <item name="2" xsi:type="array">
+                        <item name="text" xsi:type="string">author</item>
+                        <item name="value" xsi:type="string">author</item>
+                    </item>
+                    <item name="3" xsi:type="array">
+                        <item name="text" xsi:type="string">bookmark</item>
+                        <item name="value" xsi:type="string">bookmark</item>
+                    </item>
+                    <item name="4" xsi:type="array">
+                        <item name="text" xsi:type="string">external</item>
+                        <item name="value" xsi:type="string">external</item>
+                    </item>
+                    <item name="5" xsi:type="array">
+                        <item name="text" xsi:type="string">help</item>
+                        <item name="value" xsi:type="string">help</item>
+                    </item>
+                    <item name="6" xsi:type="array">
+                        <item name="text" xsi:type="string">license</item>
+                        <item name="value" xsi:type="string">license</item>
+                    </item>
+                    <item name="7" xsi:type="array">
+                        <item name="text" xsi:type="string">next</item>
+                        <item name="value" xsi:type="string">next</item>
+                    </item>
+                    <item name="8" xsi:type="array">
+                        <item name="text" xsi:type="string">nofollow</item>
+                        <item name="value" xsi:type="string">nofollow</item>
+                    </item>
+                    <item name="9" xsi:type="array">
+                        <item name="text" xsi:type="string">noopener</item>
+                        <item name="value" xsi:type="string">noopener</item>
+                    </item>
+                    <item name="10" xsi:type="array">
+                        <item name="text" xsi:type="string">noreferrer</item>
+                        <item name="value" xsi:type="string">noreferrer</item>
+                    </item>
+                    <item name="11" xsi:type="array">
+                        <item name="text" xsi:type="string">prev</item>
+                        <item name="value" xsi:type="string">prev</item>
+                    </item>
+                    <item name="12" xsi:type="array">
+                        <item name="text" xsi:type="string">search</item>
+                        <item name="value" xsi:type="string">search</item>
+                    </item>
+                    <item name="13" xsi:type="array">
+                        <item name="text" xsi:type="string">tag</item>
+                        <item name="value" xsi:type="string">tag</item>
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Cms\Model\Wysiwyg\Validator">
+        <plugin name="skip-restricted-elements-warning" type="Taurus\PageBuilder\Plugin\WysiwygValidatorPlugin" />
+    </type>
+</config>

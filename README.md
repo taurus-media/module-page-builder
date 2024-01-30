@@ -1,29 +1,9 @@
-# README #
+# Taurus Page Builder module #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This module extends native MAgento page builder with additional features.
 
-### What is this repository for? ###
+### Features: ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* Possibility to define 'rel' attribute for a link added via wysiwyg 
+* Possibility to configure a text that looks like headings but without adding an h* tag via wysiwyg
+* Skips the warning when adding custom tags to page builder content
