@@ -1,7 +1,7 @@
 {
   "name": "taurus/module-page-builder",
-  "version": "1.0.0",
-  "description": "N/A",
+  "version": "1.0.1",
+  "description": "General PageBuilder improvements",
   "type": "magento2-module",
   "require": {
     "magento/framework": "*"
