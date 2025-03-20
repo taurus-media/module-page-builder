@@ -10,7 +10,7 @@
         <arguments>
             <argument name="additionalSettings" xsi:type="array">
                 <item name="style_formats_merge" xsi:type="boolean">true</item>
-                <item name="rel_list" xsi:type="array">
+                <item name="link_rel_list" xsi:type="array">
                     <item name="0" xsi:type="array">
                         <item name="text" xsi:type="string">-- empty --</item>
                         <item name="value" xsi:type="string"></item>
